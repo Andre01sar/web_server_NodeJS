@@ -11,9 +11,6 @@ const main = () =>{
 }
 
 
-//funcion agnóstica autoconvocada
-//agnostica porque no tiene nombre
-//autoconvocada porque la llamamos con los parentesis
 (async () => {
     main();
 })()
