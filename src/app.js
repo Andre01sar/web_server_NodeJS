@@ -1,5 +1,5 @@
-const {envs} = require('./config/env');
-const { startServer } = require('./server/server');
+import {envs} from './config/env.js';
+import { startServer }from './server/server.js';
 
 
 
@@ -11,6 +11,9 @@ const main = () =>{
 }
 
 
+//funcion agnóstica autoconvocada
+//agnostica porque no tiene nombre
+//autoconvocada porque la llamamos con los parentesis
 (async () => {
     main();
 })()
