@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto con JavaScript</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link id="theme" rel="stylesheet" type="text/css" href="css/green.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+    <!-- Slider // como cargo del cdn (es decir de aca y no de js, para que fuuncione el slider la compu debe de estar conectada a internet)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <!-- Mis Scripts -->
+    <script type="text/JavaScript" src="js/main.js"></script>
+
+    <!-- Moment JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/locale/es.min.js"></script>
+
+</head>
+<body>
+    
+    <!--Selector de tema-->
+    <div id="selector-theme">
+        <div id="to-green"></div>
+        <div id="to-red"></div>
+        <div id="to-blue"></div>
+    </div>
+
+    <section id="global">
+        <!--Cabecera-->
+        <header>
+            <div id="logo">
+                <h1>Proyecto JS</h1>
+            </div>
+            <div class="clearfix"></div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#"> Inicio </a> </li>
+                    <li><a href="#"> Reloj </a> </li>
+                    <li><a href="#"> Sobre Mi </a> </li>
+                    <li><a href="#"> Contacto </a> </li>
+                </ul>
+            </nav>
+        </header>
+        <!--Slider-->
+        <div id="slider">
+            <div class="galeria">
+                <div><img src="img/hojas.jpg" title="Hojas" /></div>
+                <div><img src="img/rojo.jpg" title="Rojo" /></div>
+                <div><img src="img/cielo.jpg" title="Cielo" /></div>
+              </div>
+        </div>
+        <!--Contenido-->
+        <secton id="content">
+            <div id="posts">
+                <article class="post">
+                    <h2> Título del articulo</h2>
+                    <span class="date">fecha de publicación</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad fuga a quis excepturi modi dolores est rerum, optio amet officiis explicabo iste unde ipsam delectus voluptatibus corrupti quaerat incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus a possimus ea architecto molestias quam quibusdam voluptatem repellendus quas facilis, adipisci iste eius ipsam error tenetur sapiente est culpa?
+                    </p>
+                    <a href="#" class="button-more">Leer mas</a>
+                </article>
+                <article class="post">
+                    <h2> Título del articulo</h2>
+                    <span class="date">fecha de publicación</span>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad fuga a quis excepturi modi dolores est rerum, optio amet officiis explicabo iste unde ipsam delectus voluptatibus corrupti quaerat incidunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ducimus a possimus ea architecto molestias quam quibusdam voluptatem repellendus quas facilis, adipisci iste eius ipsam error tenetur sapiente est culpa?
+                    </p>
+                    <a href="#" class="button-more">Leer mas</a>
+                </article>
+            </div>
+            <aside id="sidebar">
+                <div id="about">
+                    <h4><span>¿Quién soy?</span></h4>
+                    <img src="img/caracol.jpg"/>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, sed laudantium! Reiciendis, quod enim dicta adipisci accusamus amet, laudantium hic quia optio temporibus nemo facere repellendus! Consequuntur saepe soluta veritatis?
+                    </p>
+                    <div id="login">
+                        <h4><span>Identificate</span></h4>
+                        <form>
+                            <label for="name">
+                                Nombre
+                            </label>
+                            <input type="text" name="name" id="form_name"/><br>
+
+                            <label for="email">
+                                Email
+                            </label><br>
+                            <input type="text" name="email" />
+
+                            <label for="password">
+                                Contraseña
+                            </label>
+                            <input type="text" name="password" />
+
+                            <input type="submit" value="Entrar"/>
+                        </form>
+
+                    </div>
+                </div>
+
+            </aside>
+            <div class="clearfix"></div>
+        </secton>
+    </section>
+    <footer>
+        Master JavaScript V.R
+
+        <a href="#" class="subir"> Ir arriba</a>
+    </footer>
+</body>
+</html>
